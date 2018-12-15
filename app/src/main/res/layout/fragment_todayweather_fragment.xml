@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Todayweather_fragment"
+    android:gravity="center_horizontal">
+
+
+<LinearLayout android:id="@+id/root_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/Description"
+        android:text="Weather Descroption"/>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/date_time"
+        android:text="date time"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/Weather_img"
+            android:src="@drawable/ic_launcher_background"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/text_temperature"
+            android:text="14 C"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="16dp"
+        android:stretchColumns="*"
+        android:background="@drawable/border">
+
+
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+                        <TextView  android:text="wind" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:background="@drawable/cell"  android:textStyle="bold" android:textSize="15dp"
+                            android:textColor="@color/colorPrimary"/>
+                    <TextView  android:text="speed 1 Deg 1" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:background="@drawable/cell" android:id="@+id/text_wind" android:textStyle="bold" android:textSize="15dp"
+                        android:layout_column="1"  android:layout_marginLeft="8dp"/>
+
+
+
+
+                </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView  android:text="Pressure" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@drawable/cell"  android:textStyle="bold" android:textSize="15dp"/>
+
+
+            <TextView  android:text="1013.75 HDA" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@drawable/cell" android:id="@+id/text_pressure" android:textStyle="bold" android:textSize="15dp"
+                android:layout_column="1"  android:layout_marginLeft="8dp"/>
+
+
+
+
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView  android:text="Humidity"  android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@drawable/cell"  android:textStyle="bold" android:textSize="15dp"/>
+            <TextView  android:text="100%"  android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@drawable/cell" android:id="@+id/text_humidity" android:textStyle="bold" android:textSize="15dp"
+                android:layout_column="1"  android:layout_marginLeft="8dp"/>
+
+
+
+
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView  android:text="Sunrise"  android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@drawable/cell"  android:textStyle="bold" android:textSize="15dp"/>
+            <TextView  android:text="11:00" android:textColor="@color/colorPrimary"  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@drawable/cell" android:id="@+id/Sunrise" android:textStyle="bold" android:textSize="15dp"
+                android:layout_column="1"  android:layout_marginLeft="8dp"/>
+
+
+
+
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView  android:text="Sunset"  android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@drawable/cell"  android:textStyle="bold" android:textSize="15dp"/>
+            <TextView  android:text="18:00" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@drawable/cell" android:id="@+id/text_sunset" android:textStyle="bold" android:textSize="15dp"
+                android:layout_column="1"  android:layout_marginLeft="8dp"/>
+
+
+
+
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView  android:text="Geo Coords"  android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@drawable/cell"  android:textStyle="bold" android:textSize="15dp"/>
+            <TextView  android:text="[32.0,-81.0]" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@drawable/cell" android:id="@+id/text_geo" android:textStyle="bold" android:textSize="15dp"
+                android:layout_column="1"  android:layout_marginLeft="8dp"/>
+
+
+
+
+        </TableRow>
+
+
+
+
+
+    </TableLayout>
+
+
+</LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_par"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"/>
+
+</RelativeLayout>
